@@ -16,17 +16,19 @@
         <div class="tile"></div>
     </div>
     <div class="bg" style="font-family: 'Nerko One', cursive; font-size: 50px;">YayShop</div>
+
     <img src="static/down-arrow.png" alt="scroll" id="down-arrow">
     <div id="main">
-        <div style="color:#7785cc; margin: auto; font-size: larger; text-align: center;">Discord: yayblaze</div>
+        <div id="discord">Discord: yayblaze</div>
         <div id="items">
             <div class="obj">World Seed<br>----------<br>1 Heart</div>
             <div class="obj">One Structure/Biome<br>----------<br>1 Netherite Ingot</div>
-            <div class="obj">Basic Kit<br>----------<br>1 Hearts</div>
-            <div class="obj">Advanced Kit<br>----------<br>2 Hearts<div class="out" style="position: relative; bottom: 20%;">OUT OF STOCK</div></div>
-            <div class="obj">Premium Kit<br>----------<br>5 Hearts<div class="out" style="position: relative; bottom: 20%;">OUT OF STOCK</div></div>
-            <div class="obj">YayBlaze IOU<br>----------<br>3 Hearts / 1 Silence Armor Trim + 1 Netherite Ingots</div>
-            <div class="obj">Player Kill<br>----------<br>1 Netherite Ingot</div>
+            <div class="obj">Basic Kit<br>----------<br>1 Heart</div>
+            <div class="obj">Advanced Kit<br>----------<br>2 Hearts<div class="out" style="position: relative; bottom: 35%; height: fit-content;">OUT OF STOCK</div></div>
+            <div class="obj">Premium Kit<br>----------<br>5 Hearts<div class="out" style="position: relative; bottom: 35%;">OUT OF STOCK</div></div>
+            <div class="obj">YayBlaze IOU<br>----------<br>3 Hearts / 1 Silence Armor Trim + 1 Netherite Ingot</div>
+            <div class="obj">Player Kill<br>----------<br>2 Hearts<div class="out" style="position: relative; bottom: 35%;">OUT OF STOCK</div></div>
+            <div class="obj">Need Something You Don't See?<br>----------<br>Ask Me!</div>
         </div>
 
     </div>
@@ -35,7 +37,7 @@
         <div id="items2">
             <div class="obj">Basic Kit<br>---------------<br>Full Unenchanted Diamond Armor<br>Full Unenchanted Diamond Tools<br>32 Iron Ingots</div>
             <div class="obj">Advanced Kit<br>---------------<br>Full Enchanted Diamond Armor<br>Full Enchanted Diamond Tools<br>32 Iron Ingots<br>32 Cooked Porkchops</div>
-            <div class="obj">Premium Kit<br>---------------<br>Full Enchanted Netherite Armor<br>Full Enchanted Netherite Tools<br>32 Iron Ingots<br>64 Cooked Porkchops<br>16 Golden Apples<br>16 Ender Peals</div>            
+            <div class="obj">Premium Kit<br>---------------<br>Full Enchanted Netherite Armor<br>Full Enchanted Netherite Tools<br>32 Iron Ingots<br>64 Cooked Porkchops<br>16 Golden Apples<br>16 Ender Pearls</div>            
         </div>
 
 
@@ -43,6 +45,18 @@
 </body>
 
 <style>
+    #discord {
+        color: #7785cc;
+        /* background-color: #7785cc; */
+        width: fit-content;
+        margin: auto; 
+        font-size: larger; 
+        text-align: center;
+        /* box-shadow: 5px 5px 10px 5px #7785cc, -5px -5px 10px 5px #7785cc; */
+        /* box-shadow: 0 0 50px 15px #7785cc; */
+        text-shadow: 5px 5px 50px #7785cc, 5px 5px 50px #7785cc;
+    }
+
     .out {
         color: red;
         background-color: rgba(0, 0, 0, 0.5);
@@ -60,7 +74,7 @@
         background-color: rgba(255, 255, 255, 0.05);
         border: 3px solid #4c4c4c;
         position: absolute;
-        top: 190%;
+        top: 210%;
         width: 80%;
         height: fit-content;
         padding: 3%;
@@ -84,8 +98,10 @@
         margin: 2%;
         font-size: large;
         width: fit-content;
+        /* height: fit-content; */
     }
     #down-arrow {
+        pointer-events: none;
         position: absolute;
         margin: auto;
         top: 90%;
@@ -141,6 +157,7 @@
         filter: blur(1.5rem);
         opacity: 0.7;
     }
+
     @keyframes spin{
         from {
             --angle: 0deg;
